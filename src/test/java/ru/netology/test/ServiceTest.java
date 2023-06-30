@@ -176,15 +176,15 @@ class MoneyTransferTest {
         Assertions.assertEquals(10000, actual2);
     }
 
-//    @Test
-//    void transferAmountMoreFirstCard() {
-//        int actual1 = dashboardPage.depositFirstCard().deposit(21000, DataHelper.secondCardNumber())
-//                .getFirstCardBalance();
-//        int actual2 = dashboardPage.getSecondCardBalance();
-//        Assertions.assertEquals(10000, actual2);
-//        Assertions.assertEquals(10000, actual1);
-//
-//    }
+    @Test
+    void transferAmountMoreFirstCard() {
+        int actual1 = dashboardPage.depositFirstCard().deposit(21000, DataHelper.secondCardNumber())
+                .getFirstCardBalance();
+        int actual2 = dashboardPage.getSecondCardBalance();
+        Assertions.assertEquals(10000, actual2);
+        Assertions.assertEquals(10000, actual1);
+
+    }
 }
 
 
