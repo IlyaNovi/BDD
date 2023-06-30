@@ -1,12 +1,11 @@
 package ru.netology.page;
 
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.support.FindBy;
 import ru.netology.data.DataHelper;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class ValidLoginPage1 {
+public class LoginPage {
     private SelenideElement loginField = $("[data-test-id='login'] input");
     private SelenideElement passwordField = $("[data-test-id='password'] input");
     private SelenideElement loginButton = $("[data-test-id='action-login']");
@@ -18,6 +17,4 @@ public class ValidLoginPage1 {
         loginButton.click();
         return new VerificationPage();
     }
-
-
 }
